@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Quiz = ({ quiz, handleToDetails }) => {
-  const { name, total, logo } = quiz;
+  const { name, total, logo, id } = quiz;
   return (
     <div className="max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
       <img
@@ -15,13 +15,13 @@ const Quiz = ({ quiz, handleToDetails }) => {
           <h2 className="text-3xl font-semibold tracking-wide">{name}</h2>
           <p className="dark:text-gray-100">Total quiz: {total}</p>
         </div>
-        <button
-          onClick={() => handleToDetails(quiz)}
+        <Link
+          to={`/topics/${id}`}
           type="button"
           className="flex items-center justify-center w-full p-3 font-bold tracking-wide rounded-md dark:bg-violet-400 dark:text-gray-900"
         >
           Start Quiz
-        </button>
+        </Link>
       </div>
     </div>
   );
