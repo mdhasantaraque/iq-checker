@@ -6,7 +6,7 @@ const Topics = () => {
   const allQuiz = useLoaderData();
   const quizzes = allQuiz.data;
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ml-20 p-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center justify-items-center py-auto p-4 dark:bg-gray-700">
       {quizzes.map((quiz) => (
         <Quiz key={quiz.id} quiz={quiz}></Quiz>
       ))}

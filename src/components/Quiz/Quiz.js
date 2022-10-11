@@ -18,7 +18,7 @@ const Quiz = ({ quiz }) => {
         </div>
         <button
           type="button"
-          className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-400 dark:text-gray-900"
+          className="flex items-center justify-center w-full p-3 font-bold tracking-wide rounded-md dark:bg-violet-400 dark:text-gray-900"
         >
           <Link to={`/quiz/${id}`}> Start Quiz</Link>
         </button>
