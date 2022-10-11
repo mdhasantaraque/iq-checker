@@ -1,15 +1,10 @@
 import React from "react";
-import { useLoaderData } from "react-router-dom";
-import Quiz from "../Quiz/Quiz";
+import Topics from "../Topics/Topics";
 
 const Home = () => {
-  const allQuiz = useLoaderData();
-  const quizzes = allQuiz.data;
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ml-20 p-4">
-      {quizzes.map((quiz) => (
-        <Quiz key={quiz.id} quiz={quiz}></Quiz>
-      ))}
+    <div>
+      <h1>hfsadjhldlaskdlksflsad</h1>
     </div>
   );
 };
