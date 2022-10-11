@@ -4,10 +4,10 @@ import Quiz from "../Quiz/Quiz";
 
 const Topics = () => {
   const quizzes = useContext(QuizContext);
-  const [qData, setQData] = useState();
-  console.log(qData);
+  const [cart, setCart] = useState([]);
+  console.log(cart);
   const handleToDetails = (quiz) => {
-    setQData(quiz);
+    setCart(quiz);
   };
 
   return (
