@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import { BarChart } from "recharts";
+import { QuizContext } from "../Layout/Main";
 
 const Statistics = () => {
+  const quizzes = useContext(QuizContext);
+  console.log(quizzes);
   return (
     <div>
-      <h3>More creativesssss</h3>
+      <BarChart width={700} height={500} data={quizzes}></BarChart>
     </div>
   );
 };
