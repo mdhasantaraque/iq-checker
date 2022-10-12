@@ -10,14 +10,14 @@ const QuizPage = ({ quiz }) => {
         <legend className="sr-only">{id}</legend>
         <div className="flex justify-between">
           <div className="mb-6">{question}</div>
-          <a>
+          <button>
             <EyeIcon
               onClick={() =>
                 toast.info(`${correctAnswer}`, { autoClose: 2000 })
               }
               className="h-6 w-6  dark:text-gray-100"
             />
-          </a>
+          </button>
         </div>
         <div className="flex items-center justify-between rounded-lg p-4 dark:bg-gray-600">
           <div>

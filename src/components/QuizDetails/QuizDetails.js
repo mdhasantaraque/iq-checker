@@ -10,10 +10,10 @@ const QuizDetails = () => {
     <div>
       <div className="text-center p-10">
         <p className="dark:text-violet-600 text-5xl font-bold">
-          {getQuiz.data.name}
+          Quiz of {getQuiz.data.name}
         </p>
         <p className="dark:text-gray-600 text-2xl font-bold">
-          total question: {getQuiz.data.total}
+          total quiz: {getQuiz.data.total}
         </p>
       </div>
       {quizDetails.map((quiz) => (
