@@ -4,12 +4,14 @@ import { EyeIcon } from "@heroicons/react/24/solid";
 
 const QuizPage = ({ quiz }) => {
   const { options, question, id, correctAnswer } = quiz;
+  const restQuestion = question.slice(3, -4);
+
   return (
     <div className="max-w-lg mx-auto my-10  items-center p-6 dark:text-gray-100 rounded-lg border dark:bg-gray-700 border-gray-200 dark:border-gray-700">
       <fieldset className="mb-5">
         <legend className="sr-only">{id}</legend>
         <div className="flex justify-between">
-          <div className="mb-6">{question}</div>
+          <div className="mb-6">{restQuestion}</div>
           <button>
             <EyeIcon
               onClick={() =>
