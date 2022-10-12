@@ -1,8 +1,10 @@
 # Github private repo
 
-"https://github.com/programming-hero-web-course2/b6-quiz-crackerz-mdhasantaraque"
+https://github.com/programming-hero-web-course2/b6-quiz-crackerz-mdhasantaraque
 
 ## Netlify live link
+
+https://iq-checker-taraque.netlify.app
 
 ## My work in this assignment...
 
