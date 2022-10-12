@@ -1,14 +1,24 @@
 import React from "react";
 import { toast } from "react-toastify";
+import { EyeIcon } from "@heroicons/react/24/solid";
+
 const QuizPage = ({ quiz }) => {
-  // console.log(quiz);
-  // const { name, questions, total } = quiz;
   const { options, question, id, correctAnswer } = quiz;
   return (
     <div className="max-w-lg mx-auto my-10  items-center p-6 dark:text-gray-100 rounded-lg border dark:bg-gray-700 border-gray-200 dark:border-gray-700">
       <fieldset className="mb-5">
         <legend className="sr-only">{id}</legend>
-        <div className="mb-6">{question}</div>
+        <div className="flex justify-between">
+          <div className="mb-6">{question}</div>
+          <a>
+            <EyeIcon
+              onClick={() =>
+                toast.info(`${correctAnswer}`, { autoClose: 2000 })
+              }
+              className="h-6 w-6  dark:text-gray-100"
+            />
+          </a>
+        </div>
         <div className="flex items-center justify-between rounded-lg p-4 dark:bg-gray-600">
           <div>
             <div className="flex items-center  mb-4">
